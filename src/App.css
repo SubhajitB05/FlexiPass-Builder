@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.container{
+  background-color: #24232b;
+  padding: 24px;
+  width: 36rem;
+  transform: translateY(-10%);
+  border-radius: 8px;
+  box-shadow: 4px 8px 10px 10px gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  display: flex;
+  justify-content: space-between;
+  /* color: white; */
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+button{
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #2a8b8b;
+  /* color: white; */
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.copyBtn{
+  height: 30px;
+  font-size: 10px;
+}
+input[type='range'], input[type='checkbox']{
+  accent-color: rgb(38, 125, 255);
+}
+
+.charLength{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.charLength span{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.checkboxes{
+  display: grid;
+  grid-template-columns: auto auto;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 20px;
+  padding-bottom: 24px;
+}
+
+.generate-btn{
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.errorMessage{
+  color: red;
+  margin-bottom: 20px;
 }
