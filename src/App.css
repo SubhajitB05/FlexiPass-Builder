@@ -79,3 +79,23 @@ input[type='range'], input[type='checkbox']{
   color: red;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width:670px){
+  .container{
+    width: 32rem;
+  }
+}
+@media screen and (max-width:590px) {
+  .container{
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .container{
+    width: 18rem;
+  }
+  .checkboxes{
+    grid-template-columns: auto;
+  }
+}
